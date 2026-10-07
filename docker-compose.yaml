@@ -6,7 +6,7 @@ services:
         - USERNAME=github_runner
         - USER_UID=1001
         - USER_GID=1001
-        - RUNNER_VERSION=2.328.0
+        - RUNNER_VERSION=2.337.0
     container_name: github-runner-container
     restart: always
     env_file:

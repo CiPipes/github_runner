@@ -4,12 +4,12 @@ ARG USERNAME=github_runner
 ARG USER_UID=1001
 ARG USER_GID=1001
 ARG TARGETARCH
-ARG RUNNER_VERSION=2.328.0
+ARG RUNNER_VERSION=2.337.0
 
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    curl jq && \
+    curl jq gh && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*
 
 RUN groupadd -g ${USER_GID} ${USERNAME} || true && \

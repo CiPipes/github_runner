@@ -34,7 +34,7 @@ The runner then appears under **Organization settings → Actions → Runners**.
 | `GITHUB_ORG` | `.env` | Organization name, e.g. `my-company` |
 | `RUNNER_NAME` | `docker-compose.yaml` | Name displayed in GitHub |
 | `RUNNER_LABELS` | `docker-compose.yaml` | Comma-separated labels used by `runs-on` |
-| `RUNNER_VERSION` | build arg | [actions/runner](https://github.com/actions/runner/releases) version (default `2.328.0`) |
+| `RUNNER_VERSION` | build arg | [actions/runner](https://github.com/actions/runner/releases) version (default `2.337.0`) |
 
 > Values under `environment:` in `docker-compose.yaml` take precedence over `.env`. To set the name and labels from `.env`, remove them from the Compose file.
 
